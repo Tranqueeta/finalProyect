@@ -2,7 +2,7 @@ import { FileOutlined, PieChartOutlined, UserOutlined ,TeamOutlined, DesktopOutl
 import { Breadcrumb, Layout, Menu, theme } from 'antd';
 import { useState } from 'react';
 import Form1 from '../formCrud/formCrud1';
-import Form2 from '../formCrud/formCrud2';
+//import Form2 from '../formCrud/formCrud2';
 const { Header, Content, Footer, Sider } = Layout;
 
 
@@ -15,14 +15,14 @@ function getItem(label, key, icon, children) {
   };
 }
 const items = [
-  getItem('Compras x Menor', '1', <PieChartOutlined />),
+  getItem('PRRODUCTOS', '1', <PieChartOutlined />, [
+    getItem('toxishane', '4'),
+    getItem('blem', '5'),
+    getItem('todolimpia', '6'),
+  ]),
   getItem('Compras x Mayor', '2', <PieChartOutlined />),
   getItem('Ventas', '3', <DesktopOutlined />),
-  getItem('User', 'sub1', <UserOutlined />, [
-    getItem('Tom', '4'),
-    getItem('Bill', '5'),
-    getItem('Alex', '6'),
-  ]),
+  getItem('User', 'sub1', <UserOutlined />),
   getItem('Team', 'sub2', <TeamOutlined />, [getItem('Team 1', '6'), getItem('Team 2', '8')]),
   getItem('Files', '9', <FileOutlined />),
 ];
