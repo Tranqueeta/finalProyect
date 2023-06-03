@@ -47,7 +47,7 @@ const Menu1 = () => {
             padding: 0,
             background: colorBgContainer,
           }}
-        /> 
+        > aver si funciona chupapijas</Header>
         <Content
           style={{
             margin: '0 16px',
